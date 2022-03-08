@@ -1,10 +1,10 @@
-import react, { Component } from 'react';
-import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
+import react, { Component } from "react";
+import { Navbar, Nav, Container, Form, FormControl, Button } from "react-bootstrap";
 
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {};
   }
 
   render() {
