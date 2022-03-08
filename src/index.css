@@ -5,10 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF9E3;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.customNavbar{
+  background-color: #31986B;
+}
+
+.customCard {
+  background-color: #FFF9E3;
+  color: #816E51;
+  border: solid #31986B;
+}
+
+.customRow{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 
