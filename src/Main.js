@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Components/Header'
+import Header from './Components/header'
+import Footer from './Components/footer'
 
 class Main extends Component {
     constructor(props) {
@@ -7,8 +8,11 @@ class Main extends Component {
         this.state = {  }
     }
     render() { 
-        return ( 
-            <Header/ >
+        return (
+            <div>     
+            <Header/ >   
+            <Footer/ >
+            </div>      
          );
     }
 }

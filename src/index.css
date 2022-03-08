@@ -12,3 +12,16 @@ code {
     monospace;
 }
 
+
+.header {
+  background-color: #31986B;
+}
+.search {
+  background-color: #9D6739;
+}
+.footer-dark {
+  position:absolute;
+  bottom: 0;
+  background-color: #31986B;
+  display:block;
+}
