@@ -31,7 +31,7 @@ class Main extends Component {
                         </Row>
                     </Container>
                 </div>
-                <Footer/ >
+                <Footer />  
             </div>
             
 
