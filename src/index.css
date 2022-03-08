@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF9E3;
 }
 
 code {
@@ -25,3 +26,19 @@ code {
   background-color: #31986B;
   display:block;
 }
+.customNavbar{
+  background-color: #59BBAC;
+}
+
+.customCard {
+  background-color: #FFF9E3;
+  color: #816E51;
+  border: solid #59BBAC;
+}
+
+.customRow{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
