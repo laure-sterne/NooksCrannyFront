@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import {Carousel} from "react-bootstrap";
-import chair from '../images/chair.jpg';
-import couch from '../images/couch.jpg';
-import lamp from '../images/lamp.jpg';
 
 class Photos extends Component {
   constructor(props) {
@@ -16,7 +13,7 @@ class Photos extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={chair}
+              src="../images/chair.jpg"
               alt="Chair"
             />
             <Carousel.Caption>
@@ -27,7 +24,7 @@ class Photos extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={couch}
+              src="../images/couch.jpg"
               alt="Couch"
             />
 
@@ -39,7 +36,7 @@ class Photos extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={lamp}
+              src="../images/lamp.jpg"
               alt="Lamp"
             />
 

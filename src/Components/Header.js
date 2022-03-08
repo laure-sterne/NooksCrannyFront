@@ -11,11 +11,11 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <Navbar bg="light" expand="lg" fixed="top">
+          <Navbar className="customNavbar" fixed="top">
             <Container fluid>
               <Navbar.Brand href="#"> <img
                 // alt="Logo de notre site en forme de feuille sur Animal Crossing"
-                src="../images/logoFeuille.png"
+                src="../images/tomNookLogoV2.png"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
