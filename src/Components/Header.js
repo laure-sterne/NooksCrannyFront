@@ -1,5 +1,6 @@
 import react, { Component } from "react";
 import { Navbar, Nav, Container, Form, FormControl, Button } from "react-bootstrap";
+//import de Navlink pour link des pages
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
@@ -29,6 +30,7 @@ class Header extends Component {
                   style={{ maxHeight: '100px' }}
                   navbarScroll
                 >
+                  {/*Navlink = <a> en html pour lier les pages */}
                   <NavLink className="nav-link" to="/products">Tous nos produits</NavLink>
                   <NavLink className="nav-link" to="/login">Se connecter</NavLink>
                 </Nav>

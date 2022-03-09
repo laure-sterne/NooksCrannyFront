@@ -1,13 +1,15 @@
+//Importer React et Dom dans le projet + Fichier CSS
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+//Import des pages et des composants utiles
 import Main from './Main';
 import Login from './login';
-import Footer from './Components/Footer';
 import Products from './products';
+//import du router pour faire le lien entre les pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-
+//render pour afficher la page avec les routes des liens
 ReactDOM.render(
   <React.StrictMode>
   <Router>
@@ -16,7 +18,6 @@ ReactDOM.render(
       <Route path="/login" element={<Login />} />
       <Route path="/products" element={<Products />} />
     </Routes>
-    <Footer />
   </Router>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
+//template des cartes pour les articles
 class Cards extends React.Component {
     constructor(props) {
         super(props);

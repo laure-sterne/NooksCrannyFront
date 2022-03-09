@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button, Row, InputGroup, Col } from "react-bootstrap";
 
+//formulaire pour s'inscrire 
 class SubscribeForm extends Component {
   constructor(props) {
     super(props);

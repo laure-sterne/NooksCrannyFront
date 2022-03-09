@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Carousel} from "react-bootstrap";
 
+//carousel de photos de la page Main
 class Photos extends Component {
   constructor(props) {
     super(props);

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button, Row, InputGroup, Col } from "react-bootstrap";
 
+//Formulaire pour se connecter à un compte
 class FormLog extends Component {
   constructor(props) {
     super(props);
