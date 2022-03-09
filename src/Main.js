@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Footer from './Components/footer';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
-import Buttonbuy from './Components/buttonBuy';
-import Photos from './Components/carousel';
-import Cards from './Components/card';
+import Buttonbuy from './Components/ButtonBuy';
+import Photos from './Components/Carousel';
+import Cards from './Components/Card';
 import { Container, Row, Col } from 'react-bootstrap';
 
 class Main extends Component {
@@ -33,8 +33,6 @@ class Main extends Component {
                 </div>
                 <Footer />  
             </div>
-            
-
          );
     }
 }

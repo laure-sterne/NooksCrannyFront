@@ -1,5 +1,6 @@
 import react, { Component } from "react";
 import { Navbar, Nav, Container, Form, FormControl, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -13,14 +14,14 @@ class Header extends Component {
         <header>
           <Navbar className="customNavbar" fixed="top">
             <Container fluid>
-              <Navbar.Brand href="#"> <img
+              <NavLink className="nav-link" to="/"><Navbar.Brand href="#"> <img
                 // alt="Logo de notre site en forme de feuille sur Animal Crossing"
                 src="../images/tomNookLogoV2.png"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-                Nook's Cranny</Navbar.Brand>
+                Nook's Cranny</Navbar.Brand></NavLink>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
@@ -28,8 +29,8 @@ class Header extends Component {
                   style={{ maxHeight: '100px' }}
                   navbarScroll
                 >
-                  <Nav.Link href="#action1">Tous nos produits</Nav.Link>
-                  <Nav.Link href="#action2">Se connecter</Nav.Link>
+                  <NavLink className="nav-link" to="/products">Tous nos produits</NavLink>
+                  <NavLink className="nav-link" to="/login">Se connecter</NavLink>
                 </Nav>
                 <Form className="d-flex">
                   <FormControl
