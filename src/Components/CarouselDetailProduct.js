@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {Carousel} from "react-bootstrap";
 
 //carousel de photos de la page Main
-class Photos extends Component {
+class CarouselDetailProduct extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -52,4 +52,4 @@ class Photos extends Component {
   }
 }
 
-export default Photos;
+export default CarouselDetailProduct;

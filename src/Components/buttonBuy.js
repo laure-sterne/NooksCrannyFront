@@ -2,7 +2,7 @@ import react, { Component } from "react";
 import Button from 'react-bootstrap/Button';
 
 //composant pour le bouton Acheter
-class Buttonbuy extends Component {
+class ButtonBuy extends Component {
     constructor(props) {
         super(props);
     }
@@ -17,4 +17,4 @@ class Buttonbuy extends Component {
     }
 }
 
-export default Buttonbuy;
+export default ButtonBuy;

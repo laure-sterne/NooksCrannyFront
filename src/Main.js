@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Buttonbuy from './Components/ButtonBuy';
-import Photos from './Components/Carousel';
+import CarouselMain from './Components/CarouselMain';
 import Cards from './Components/Card';
 //Import des composants de react bootstrap utilisés dans cette page (layout grid)
 import { Container, Row, Col } from 'react-bootstrap';
@@ -19,7 +19,7 @@ class Main extends Component {
             <div>
             {/* appel des composants de la page*/}
             <Header />
-            <Photos />
+            <CarouselMain />
             <Buttonbuy />
                 <div>
                     <Container>
