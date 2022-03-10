@@ -20,7 +20,6 @@ class Main extends Component {
             {/* appel des composants de la page*/}
             <Header />
             <CarouselMain />
-            <Buttonbuy />
                 <div>
                     <Container>
                         <Row className="customRow">

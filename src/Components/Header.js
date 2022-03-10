@@ -32,18 +32,22 @@ class Header extends Component {
                 >
                   {/*Navlink = <a> en html pour lier les pages */}
                   <NavLink className="nav-link" to="/products">Tous nos produits</NavLink>
-                  <NavLink className="nav-link" to="/login">Se connecter</NavLink>
                   <NavLink className="nav-link" to="/admin">Admin</NavLink>
                 </Nav>
+                <Nav className="research">
                 <Form className="d-flex">
                   <FormControl
                     type="search"
-                    placeholder="Chaise jaune"
+                    placeholder="Table grenouille"
                     className="me-2"
                     aria-label="Search"
                   />
                   <Button variant="outline-success">Rechercher</Button>
                 </Form>
+                </Nav>
+                <Nav>
+                <NavLink className="nav-link" to="/login">Se connecter</NavLink>
+                </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>

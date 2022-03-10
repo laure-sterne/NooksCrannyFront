@@ -39,9 +39,11 @@ code {
   margin-top: 3em;
   margin-bottom: 3em;
 }
-
-
 .flex-column{
   margin-top : 100px;
   background-color: #f7c8c2;
+}
+.research{
+  position: absolute;
+  margin-left: 30%;
 }
