@@ -7,8 +7,10 @@ import Main from './Main';
 import Login from './login';
 import Products from './products';
 import DetailProduct from './detailProduct';
+import Admin from './admin';
 //import du router pour faire le lien entre les pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 //render pour afficher la page avec les routes des liens
 ReactDOM.render(
@@ -19,6 +21,7 @@ ReactDOM.render(
       <Route path="/login" element={<Login />} />
       <Route path="/products" element={<Products />} />
       <Route path="/detailProduct" element={<DetailProduct />} />
+      <Route path="/admin" element={<Admin />} />
     </Routes>
   </Router>
   </React.StrictMode>,
