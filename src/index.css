@@ -35,7 +35,13 @@ code {
   border: solid #59BBAC;
 }
 
-.customRow{
+.customRow, .customCard{
   margin-top: 3em;
   margin-bottom: 3em;
+}
+
+
+.flex-column{
+  margin-top : 100px;
+  background-color: #f7c8c2;
 }
