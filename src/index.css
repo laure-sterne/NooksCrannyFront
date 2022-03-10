@@ -41,9 +41,12 @@ code {
 }
 .flex-column{
   margin-top : 100px;
-  background-color: #f7c8c2;
 }
 .research{
   position: absolute;
   margin-left: 30%;
+}
+.color-button-filter {
+  background-color: #59BBAC;
+  border: #59BBAC;
 }
