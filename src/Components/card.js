@@ -2,6 +2,7 @@ import React from 'react';
 //import ButtonBuy from './Components/ButtonBuy';
 import { Card } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
+import ButtonBuy from './ButtonBuy';
 
 //template des cartes pour les articles
 class Cards extends React.Component {
@@ -22,7 +23,7 @@ class Cards extends React.Component {
                         <Card.Text>
                             Prix: 1600 clochettes
                         </Card.Text>
-
+                    <ButtonBuy />
                         
                     </Card.Body>
                 </Card> 

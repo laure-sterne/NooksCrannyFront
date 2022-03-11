@@ -11,7 +11,7 @@ class ButtonBuy extends Component {
         return (
             <div>
                 <Button variant="primary">Acheter</Button>{' '}
-                <Button variant="outline-primary">Acheter Plus</Button>{' '}
+                <Button variant="outline-primary">Voir plus</Button>{' '}
             </div>
         );
     }
