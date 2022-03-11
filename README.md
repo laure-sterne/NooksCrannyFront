@@ -1,70 +1,70 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Nook's Cranny – Front
 
-## Available Scripts
+Nook's Cranny is a website for people who are in love with furniture.
+But not just any piece of furniture, because there are unique and recyclable! 
 
-In the project directory, you can run:
+Discovered the front world of Nook's Cranny in this repository!
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Client:** React, Bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to install and run the project
 
-### `npm test`
+Clone the project with HTTPS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  git clone https://github.com/adatechschool/project-collectif---vente-de-meubles-groupe-b-front.git
+```
+or with SSH key
 
-### `npm run build`
+```bash
+  git clone git@github.com:adatechschool/project-collectif---vente-de-meubles-groupe-b-front.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install react-bootstrap to show and add bootstrap's components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm i react-bootstrap
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install react-dom-router which create link between differents pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+    npm i react-router-dom
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  npm run start
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To understand the logic of React, we can find the [documentation](https://fr.reactjs.org/).
 
-### Code Splitting
+To create some components which already exists from React Bootstrap, 
+you can find a lot of these in this [website](https://react-bootstrap.github.io/components/carousel/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Authors
 
-### Analyzing the Bundle Size
+**For the first week** ✨
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [@Soso-M](https://github.com/Soso-M)
+- [@Marchand-Matheo](https://github.com/Marchand-Matheo)
+- [@YanissB](https://github.com/YanissB)
+- [@Ekhinox](https://github.com/Ekhinox)
+- [@laure-sterne](https://github.com/laure-sterne)
 
-### Making a Progressive Web App
+**For the second week** ⭐
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@CelineBarbe](https://github.com/CelineBarbe)
+- [@celinelouaintier](https://github.com/celinelouaintier)
+- [@EstherL6](https://github.com/EstherL6)
+- [@IscianeN](https://github.com/IscianeN)
+- [@Vico4](https://github.com/Vico4)
