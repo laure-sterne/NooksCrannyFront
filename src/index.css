@@ -33,6 +33,15 @@ code {
   background-color: #FFF9E3;
   color: #816E51;
   border: solid #59BBAC;
+  margin: 1rem;
+}
+
+.listeMeubles {
+  list-style-type: none;
+	padding: 10rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .customRow, .customCard{

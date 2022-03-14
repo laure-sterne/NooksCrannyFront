@@ -12,22 +12,20 @@ class Cards extends React.Component {
    
     render() { 
         return ( 
-            <div>
                  <Card className="customCard" style={{  width: '20rem' }}>
-                    <Card.Img variant="top" src={"../images/froggyChair.jpg"} />
+                    <Card.Img variant="top" src={this.props.cover} />
                     <Card.Body>
-                        <NavLink to="/detailProduct"><Card.Title>FROGGY CHAIR</Card.Title></NavLink>
+                        <NavLink to="/detailProduct"><Card.Title>{this.props.name}</Card.Title></NavLink>
                         <Card.Text>
-                            Type: Chaise
+                            Type: {this.props.type}
                         </Card.Text>
                         <Card.Text>
-                            Prix: 1600 clochettes
+                            Prix: {this.props.price} clochettes
                         </Card.Text>
                     <ButtonBuy />
                         
                     </Card.Body>
                 </Card> 
-            </div>
          );
     }
 }

@@ -48,8 +48,18 @@ class Main extends Component {
             {/* appel des composants de la page*/}
             <Header />
             <CarouselMain />
-                <div>
-                    <Container>
+                <ul className = "listeMeubles">
+             {meubles.map(({id, Nom, photo1, type, prix}) => (
+          
+                 <Cards 
+                  key = {id}
+                  cover = {photo1}
+                  name = {Nom}
+                  type = {type}
+                  price = {prix}
+                 />
+             ))}
+ {/*                <Container>
                         <Row className="customRow">
                             <p> il y a {meubles.length} meubles </p>
                             <p> les meubles : {meubles.map(meuble => meuble.Nom)} </p>
@@ -61,8 +71,8 @@ class Main extends Component {
                             <Col><Cards /></Col> 
 
                         </Row>
-                    </Container>
-                </div>
+                    </Container> */}
+                </ul>
                 <Footer />  
             </div>
          );
