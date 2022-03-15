@@ -5,14 +5,18 @@ import { Form, Button, Row, InputGroup, Col } from "react-bootstrap";
 class SubscribeForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {mail:"",mdp:"",pseudo:""};
-  }
-  handleChange = (event) => {
-    this.setState({[event.target.mail]: event.target.value,[event.target.mdp]:event.target.value,[event.target.value]:event.target.value});
+    this.state = {
+      mail : "",
+      mdp : "",
+      pseudo : ""
+  };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
  
   handleSubmit = (event) => {
-    alert('A form was submitted: ' + this.state);
+    console.log(this.state);
     console.log("coucou")
         fetch('http://localhost:4000/createuser', {
         method: 'POST',
@@ -25,18 +29,24 @@ class SubscribeForm extends Component {
  
     event.preventDefault();
 }
+
+handleChange = (event) => {
+  this.setState({[event.target.name]:event.target.value});
+}
+
 render(){
   return (
-    <form onSubmit={this.handleSubmit}>
+  <form onSubmit={this.handleSubmit}>
+
       <label>
         Mail:
-        <input type="text" value={this.state.value} mail="mail" onChange={this.handleChange} />
+        <input name="mail" placeholder="Mail" value={this.state.mail}  onChange={this.handleChange} />  
         Mot de passe
-        <input type="text" value={this.state.value} mdp="mdp" onChange={this.handleChange} />
+        <input name="mdp" placeholder="Mdp" value={this.state.mdp}  onChange={this.handleChange} />
         Pseudo
-        <input type="text" value={this.state.value} pseudo="pseudo" onChange={this.handleChange} />
+        <input name="pseudo" placeholder="Pseudo" value={this.state.pseudo}  onChange={this.handleChange} />
       </label>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit"/>
     </form>
   );
 }
