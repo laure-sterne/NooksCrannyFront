@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 
 const Footer = () => (
-    <Container fluid className="footer-dark">
+    <Container fluid className="footer-dark sticky-bottom">
         <Row>
             <Col>
                 <div>

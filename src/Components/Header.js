@@ -13,7 +13,7 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <Navbar className="customNavbar" fixed="top">
+          <Navbar className="customNavbar" sticky="top">
             <Container fluid>
               <NavLink className="nav-link" to="/"><Navbar.Brand href="#"> <img
                 // alt="Logo de notre site en forme de feuille sur Animal Crossing"
