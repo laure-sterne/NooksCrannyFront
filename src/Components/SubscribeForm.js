@@ -17,17 +17,21 @@ class SubscribeForm extends Component {
  
   handleSubmit = (event) => {
     console.log(this.state);
-    console.log("coucou")
         fetch('http://localhost:4000/createuser', {
         method: 'POST',
+        headers: {'Content-Type':'application/json'},
         // We convert the React state to JSON and send it as the POST body
         body: JSON.stringify(this.state)
-      }).then(function(response) {
-        console.log(response)
-        return response.json();
-      });
+      }).then(
+        response => {response.json() 
+          console.log('bonjour')}) 
+        .catch(error => "error" + error)
+        .then(response => console.log(response.created))
+    
+      ;
  
     event.preventDefault();
+    event.stopPropagation();
 }
 
 handleChange = (event) => {
