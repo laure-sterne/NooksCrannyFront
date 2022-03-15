@@ -40,7 +40,7 @@ render(){
 
       <label>
         Mail:
-        <input name="mail" placeholder="Mail" value={this.state.mail}  onChange={this.handleChange} />  
+        <input name="mail" placeholder="Mail" value={this.state.mail}  onChange={this.handleChange} />
         Mot de passe
         <input name="mdp" placeholder="Mdp" value={this.state.mdp}  onChange={this.handleChange} />
         Pseudo
