@@ -23,11 +23,11 @@ class SubscribeForm extends Component {
         // We convert the React state to JSON and send it as the POST body
         body: JSON.stringify(this.state)
       }).then(
-        response => {response.json() 
-          console.log('bonjour')}) 
+        response => 
+          response.json()
+      )
         .catch(error => "error" + error)
-        .then(response => console.log(response.created))
-    
+        .then(response => console.log(response.okk))
       ;
  
     event.preventDefault();
