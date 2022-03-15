@@ -13,38 +13,24 @@ class CarouselMain extends Component {
         <Carousel fade>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src="../images/chair.jpg"
-              alt="Chair"
+              className="d-block w-50 mx-auto"
+              src="../images/exemplesetup1.png"
+              alt="Setup"
             />
-            <Carousel.Caption>
-              <h3>Chaise Scandinave</h3>
-              <p>Le blanc, chic et incontournable</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src="../images/couch.jpg"
-              alt="Couch"
+              className="d-block w-50 mx-auto"
+              src="../images/exemplesetup2.jpeg"
+              alt="Setup"
             />
-
-            <Carousel.Caption>
-              <h3>Canapé vert canard</h3>
-              <p>Le velours, la matière parfaite qui mélange confort et élégance</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src="../images/lamp.jpg"
-              alt="Lamp"
+              className="d-block w-50 mx-auto"
+              src="../images/setup4.jpeg"
+              alt="Setup"
             />
-
-            <Carousel.Caption>
-              <h3>Lustre blanc</h3>
-              <p>Simple mais efficace pour éclairer vos intérieurs</p>
-            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
