@@ -53,6 +53,7 @@ class Main extends Component {
           
                  <Cards 
                   key = {id}
+                  id = {id}
                   cover = {photo1}
                   name = {Nom}
                   type = {type}
