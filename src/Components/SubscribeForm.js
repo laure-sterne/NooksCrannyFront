@@ -8,7 +8,8 @@ class SubscribeForm extends Component {
     this.state = {
       mail : "",
       mdp : "",
-      pseudo : ""
+      pseudo : "",
+      created : ""
   };
 
     this.handleChange = this.handleChange.bind(this);
@@ -21,13 +22,13 @@ class SubscribeForm extends Component {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         // We convert the React state to JSON and send it as the POST body
-        body: JSON.stringify(this.state)
+        body: JSON.stringify({mail: this.state.mail, mdp: this.state.mdp, pseudo: this.state.pseudo })
       }).then(
         response => 
           response.json()
       )
         .catch(error => "error" + error)
-        .then(response => console.log(response.okk))
+        .then(response => this.setState({created: response.okk}))
       ;
  
     event.preventDefault();
@@ -35,7 +36,8 @@ class SubscribeForm extends Component {
 }
 
 handleChange = (event) => {
-  this.setState({[event.target.name]:event.target.value});
+  
+  this.setState({[event.target.name] : event.target.value});
 }
 
 render(){
@@ -51,6 +53,7 @@ render(){
         <input name="pseudo" placeholder="Pseudo" value={this.state.pseudo}  onChange={this.handleChange} />
       </label>
       <input type="submit" value="Submit"/>
+      <p>{this.state.created}</p> 
     </form>
   );
 }
