@@ -33,18 +33,19 @@ const MenuVertical = () => {
                         <div id="example-collapse-text">
                             <Card body style={{ width: '400px' }}>
                                 <Form>
+
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                       custom-checkbox="green"
                                         label="Jaune"
                                     />
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                        id="custom-checkbox"
                                         label="Rouge"
                                     />
                                     <Form.Check
-                                        type="switch"
+                                        type="checkbox"
                                         id="custom-switch"
                                         label="Bleu"
                                     />
@@ -68,20 +69,20 @@ const MenuVertical = () => {
                             <Card body style={{ width: '400px' }}>
                                 <Form>
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                        id="custom-checkbox"
                                         label="Lit"
                                     />
 
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                        id="custom-checkbox"
                                         label="Chaise"
                                     />
 
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                        id="custom-checkbox"
                                         label="Bureau"
                                     />
                                 </Form>
@@ -104,14 +105,14 @@ const MenuVertical = () => {
                             <Card body style={{ width: '400px' }}>
                                 <Form>
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                        id="custom-checkbox"
                                         label="Bois"
                                     />
 
                                     <Form.Check
-                                        type="switch"
-                                        id="custom-switch"
+                                        type="checkbox"
+                                        id="custom-checkbox"
                                         label="Feuille"
                                     />
 
