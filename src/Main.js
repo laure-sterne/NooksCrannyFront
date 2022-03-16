@@ -45,12 +45,12 @@ class Main extends Component {
           } else {
         return ( 
             <div>
-            {/* appel des composants de la page*/}
             <Header />
+            <h2> </h2>
             <CarouselMain />
+                <h2 className="affaires">Nos bonnes affaires du moment :</h2>
                 <ul className = "listeMeubles">
              {meubles.map(({id, Nom, photo1, type, prix}) => (
-          
                  <Cards 
                   key = {id}
                   id = {id}

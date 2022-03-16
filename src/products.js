@@ -11,9 +11,33 @@ import { Collapse } from 'bootstrap';
 class Products extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            error: null,
+            isLoaded: false,
+            meubles: []
+        }
+    }
+    componentDidMount() {
+        console.log("fetching") 
+        fetch("http://localhost:4000/meubles")
+          .then(res => res.json())
+          .then(
+            (res) => {
+              console.log(res)
+              this.setState({
+                  isLoaded : true,
+                  meubles : res
+                })
+              console.log("fetched")
+            })
     }
     render() {
+        const { error, isLoaded, meubles } = this.state;
+        if (error) {
+            return <div>Erreur : {error.message}</div>;
+          } else if (!isLoaded || !this.state.meubles[0]) {
+            return <div>Chargement…</div>;
+          } else {
         return (
 
             <div>
@@ -22,30 +46,24 @@ class Products extends Component {
                     <Row>
                         <Col md="auto"><MenuVertical /></Col>
                         <Col className="customCard" >
-                            <Row>
-                                <Col>
-                                    <Cards />
-                                    <Cards />
-                                    <Cards />
-                                    <Cards />
-                                </Col>
-                                
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <Cards />
-                                    <Cards />
-                                    <Cards />
-                                    <Cards />
-                                </Col>
-                            </Row>
+                        <ul className = "listeMeubles">
+                            {meubles.map(({id, Nom, photo1, type, prix}) => (
+                                <Cards 
+                                key = {id}
+                                cover = {photo1}
+                                name = {Nom}
+                                type = {type}
+                                price = {prix}
+                                />
+                            ))}
+                        </ul>
                         </Col>
                     </Row>
                 </Container>
                 <Footer />
             </div>
         );
-    }
+        }}
 }
 
 export default Products;
