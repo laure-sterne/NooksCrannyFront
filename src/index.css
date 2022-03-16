@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+.affaires {
+  text-align: center;
+  padding-top: 1.8em;
+  font-weight: bold;
+}
 
 .header {
   background-color: #31986B;
@@ -33,7 +38,7 @@ code {
 
 .listeMeubles {
   list-style-type: none;
-	padding: 10rem;
+	padding: 5px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
