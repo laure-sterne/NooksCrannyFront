@@ -10,14 +10,17 @@ class ProductDescription extends Component {
         return (
             <div>
                 <ul>
-                    <li><h3>Froggy Chair</h3></li>
-                    <li>Type: Chaise</li>
-                    <li>Prix: 1600 clochettes</li>
-                    <li>Couleur: Vert</li>
-                    <li>Matière: Bois</li>
-                    <li>Dimension: </li>     
+                    <li><h3>{this.props.name}</h3></li>
+                    <li>Type: {this.props.type}</li>
+                    <li>Prix: {this.props.prix} clochettes</li>
+                    <li>Couleur: {this.props.couleur}</li>
+                    <li>Matière: {this.props.matiere}</li>
+                    <li>Dimension: longueur = {this.props.longueur ? this.props.longueur + " cm" : " inconnue"},  
+                    largeur = {this.props.largeur ? this.props.largeur + " cm" : " inconnue"},  
+                    hauteur = {this.props.hauteur ? this.props.hauteur + " cm" : " inconnue"}  
+                    </li>     
                 </ul>
-                <ButtonBuy />
+                <ButtonBuy type="buyOnly"/>
             </div>
           );
     }

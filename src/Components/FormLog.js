@@ -15,8 +15,6 @@ class FormLog extends Component {
   }
 
   handleSubmit(event) {
-    alert(this.state.email + " " + this.state.password)
-    // console.log(this.state.email + " " + this.state.password)
     
     const requestOptions = {
       method: 'POST',
