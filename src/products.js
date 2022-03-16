@@ -50,6 +50,7 @@ class Products extends Component {
                             {meubles.map(({id, Nom, photo1, type, prix}) => (
                                 <Cards 
                                 key = {id}
+                                id = {id}
                                 cover = {photo1}
                                 name = {Nom}
                                 type = {type}

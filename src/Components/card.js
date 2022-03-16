@@ -21,7 +21,7 @@ class Cards extends React.Component {
                             Type: {this.props.type}
                         </Card.Text>
                         <Card.Text>
-                            Prix: {this.props.price} < img src="public/images/bells.jpg"></img>
+                            Prix: {this.props.price} < img src="./public/images/bells.jpg"></img>
                         </Card.Text>
                     <ButtonBuy id={this.props.id} />
                         

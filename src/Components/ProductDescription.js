@@ -11,6 +11,7 @@ class ProductDescription extends Component {
             <div>
                 <ul>
                     <li><h3>{this.props.name}</h3></li>
+                    <li> Description : {this.props.description}</li>
                     <li>Type: {this.props.type}</li>
                     <li>Prix: {this.props.prix} clochettes</li>
                     <li>Couleur: {this.props.couleur}</li>

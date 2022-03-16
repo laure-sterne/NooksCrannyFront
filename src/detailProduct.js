@@ -25,16 +25,22 @@ function DetailProduct() {
               console.log(res)
               setMeuble(res[0])
             })
-        },[]
+        }, []
     )
         
     // to-do : adapter le carousel avec les images du meubles 
      return (
             <div>
                 <Header />
-                <CarouselDetailProduct />
-                {meuble ? <ProductDescription
-                    name = {meuble.Nom}
+                {meuble ? <>
+                <CarouselDetailProduct 
+                    photos = {[meuble.photo1, meuble.photo2, meuble.photo3]}
+                    name = {meuble.nom}
+                    description = {meuble.description}
+                    />
+                 <ProductDescription
+                    name = {meuble.nom}
+                    description = {meuble.description}
                     type = {meuble.type}
                     prix = {meuble.prix}
                     couleur = {meuble.couleur}
@@ -42,7 +48,7 @@ function DetailProduct() {
                     largeur = {meuble.largeur}
                     longueur = {meuble.longueur}
                     hauteur = {meuble.hauteur}
-                /> : <p>Chargement...</p>}
+                /> </> : <p>Chargement...</p>}
                 <Row>
                     <Card />
                     <Card />

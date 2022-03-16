@@ -50,12 +50,12 @@ class Main extends Component {
             <CarouselMain />
                 <h2 className="affaires">Nos bonnes affaires du moment :</h2>
                 <ul className = "listeMeubles">
-             {meubles.map(({id, Nom, photo1, type, prix}) => (
+             {meubles.map(({id, nom, photo1, type, prix}) => (
                  <Cards 
                   key = {id}
                   id = {id}
                   cover = {photo1}
-                  name = {Nom}
+                  name = {nom}
                   type = {type}
                   price = {prix}
                  />
