@@ -55,7 +55,7 @@ class AdminTable extends Component {
             <thead>
               <tr>
                 <th>Pseudo</th>
-                <th>Type</th>
+                <th>Nom de l'item</th>
                 <th>Prix</th>
                 <th>Statut</th>
               </tr>

@@ -67,7 +67,7 @@ class FormLog extends Component {
                 onChange={this.handleChange}
                 />
               <Form.Text className="text-muted">
-                Tom Nook garde les informations comme ces clochettes. En sécurité
+                Tom Nook garde les informations comme ses clochettes. En sécurité.
               </Form.Text>
             </Form.Group>
 

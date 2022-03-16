@@ -1,9 +1,19 @@
 const CallToAction = () => {
     return <div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus dolor mi, a eleifend leo rhoncus auctor. 
-                    Praesent vel odio malesuada, cursus nisl in, maximus libero. Fusce scelerisque euismod fringilla. 
-                    Sed placerat eros quis enim tempor, ut accumsan dui accumsan. Cras quis risus dui. Nam porta urna ut dictum sodales.
+                    Vos goûts évoluent et votre intérieur ne vous convient plus?
+                </p>
+                <p>
+                    Vous souhaitez remplacer ces meubles que vous avez chéri et leur trouver une nouvelle famille?
+                </p>
+                <p>
+                    Chez Nook's Cranny ils seront mis en valeur, vous pourrez récupérer de nombreuses clochettes et qui sait, peut être trouver l'inspiration pour votre intérieur ainsi que vos nouveaux meubles.
+                </p>
+                <p>
+                    Créez votre compte en quelques clics!
+                </p>
+                <p>
+                    Achetez et vendez ces meubles qui méritent une seconde vie ❤️.
                 </p>
            </div>
 }
