@@ -27,7 +27,8 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header connected = {this.state.connected}
+        handleConnectedState = {this.handleConnectedState}/>
         <Container>
           <Row  className="customRaw">
             <Col><img src="../images/tomNookCTA.png" /></Col>
