@@ -28,7 +28,7 @@ function DetailProduct() {
         }, []
     )
         
-    // to-do : adapter le carousel avec les images du meubles 
+    // to-do : afficher "indisponible si le meuble est vendu"
      return (
             <div>
                 <Header />
@@ -40,6 +40,7 @@ function DetailProduct() {
                     />
                     <h1> </h1>
                  <ProductDescription
+                    id = {meuble.id}
                     name = {meuble.nom}
                     description = {meuble.description}
                     type = {meuble.type}
@@ -49,6 +50,7 @@ function DetailProduct() {
                     largeur = {meuble.largeur}
                     longueur = {meuble.longueur}
                     hauteur = {meuble.hauteur}
+                    statut = {meuble.statut}
                 /> </> : <p>Chargement...</p>}
                 <Row className="mx-auto">
                     <Card />

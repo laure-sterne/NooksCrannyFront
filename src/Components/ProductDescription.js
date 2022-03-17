@@ -21,7 +21,7 @@ class ProductDescription extends Component {
                     hauteur = {this.props.hauteur ? this.props.hauteur + " cm" : " inconnue"}  
                     </li>     
                 </ul>
-                <ButtonBuy type="buyOnly"/>
+                {this.props.statut === "disponible" ? <ButtonBuy id={this.props.id} type="buyOnly"/> : <p>Vendu !</p>}
             </div>
           );
     }
