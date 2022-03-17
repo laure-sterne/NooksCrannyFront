@@ -22,10 +22,6 @@ class CarouselDetailProduct extends Component {
             src={photo}
             alt={this.props.name}
           />
-          <Carousel.Caption>
-            <h3>{this.props.name}</h3>
-            <p>{this.props.description}</p>
-          </Carousel.Caption>
           </Carousel.Item> : null
        )}
         </Carousel>
