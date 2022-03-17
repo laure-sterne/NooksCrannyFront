@@ -60,7 +60,7 @@ class FormLog extends Component {
 
   render() {
     const connected = this.props.connected
-    const user = this.state.email
+    const user = this.state.pseudo
     // const scale = this.props.scale
     if(connected !== "ok") {
     return (
