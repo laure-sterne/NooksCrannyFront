@@ -6,7 +6,9 @@ import AdminTable from './Components/Table';
 class Admin extends Component {
     constructor(props) {
         super(props);
+        
     }
+
     state = {  }
     render() { 
         return ( 
