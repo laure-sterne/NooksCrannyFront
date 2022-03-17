@@ -50,14 +50,14 @@ class Main extends Component {
             <CarouselMain />
                 <h2 className="affaires">Nos bonnes affaires du moment :</h2>
                 <ul className = "listeMeubles">
-             {meubles.map(({id, Nom, photo1, type, prix}) => (
-                 <Cards 
-                  key = {id}
-                  cover = {photo1}
-                  name = {Nom}
-                  type = {type}
-                  price = {prix}
-                 />
+                  {meubles.map(({id, Nom, photo1, type, prix}) => (
+                    <Cards 
+                      key = {id}
+                      cover = {photo1}
+                      name = {Nom}
+                      type = {type}
+                      price = {prix}
+                    />
              ))}
  {/*                <Container>
                         <Row className="customRow">
