@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button, Row, InputGroup, Col } from "react-bootstrap";
 
+
 //Formulaire pour se connecter à un compte
 class FormLog extends Component {
   constructor(props) {
@@ -9,8 +10,9 @@ class FormLog extends Component {
       email: "",
       pseudo: "",
       password: "",
-      connected: "no"
+      // connected: "no",
     };
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -31,9 +33,15 @@ class FormLog extends Component {
         // console.log("success: " + response.body)
         console.log(response.ok)
         console.log(response.result)
-        if(response.ok == "ok"){this.setState({connected: "yes",
-      pseudo: response.result.pseudo})}
-        else {this.setState({connected: "tried"})}
+        if(response.ok == "ok"){
+          this.setState({connected: "yes",
+      pseudo: response.result.pseudo})
+          this.props.handleConnectedState("ok")
+        }
+        else {
+        this.setState({connected: "tried"})
+        this.props.handleConnectedState("tried")
+      }
       }
       )  // si la response est ok, set state connected to true et adapter le render en fonction
      
@@ -51,9 +59,16 @@ class FormLog extends Component {
   }
 
   render() {
+<<<<<<< HEAD
     const connected = this.state.connected
     const user = this.state.pseudo
     if(connected !== "yes") {
+=======
+    const connected = this.props.connected
+    const user = this.state.email
+    // const scale = this.props.scale
+    if(connected !== "ok") {
+>>>>>>> 123f63a79ff05854d62743b706eee710e84f2b14
     return (
       <div>
         <h3> Connectez-vous </h3>
