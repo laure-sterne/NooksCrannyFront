@@ -43,7 +43,6 @@ handleChange = (event) => {
 render(){
   return (
   <form onSubmit={this.handleSubmit}>
-
       <label>
         Mail:
         <input name="mail" placeholder="Mail" value={this.state.mail}  onChange={this.handleChange} />

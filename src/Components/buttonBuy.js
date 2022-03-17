@@ -1,5 +1,7 @@
 import react, { Component } from "react";
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
+
 
 //composant pour le bouton Acheter
 class ButtonBuy extends Component {
@@ -7,11 +9,13 @@ class ButtonBuy extends Component {
         super(props);
     }
     state = {}
+
     render() {
+        const link = "/detailProduct/" + this.props.id
         return (
             <div>
                 <Button variant="primary">Acheter</Button>{' '}
-                <Button variant="outline-primary">Voir plus</Button>{' '}
+                {this.props.type === "buyOnly" ? null : <Button variant="outline-primary"><Link to={link}>Voir plus</Link></Button>}
             </div>
         );
     }

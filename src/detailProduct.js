@@ -5,18 +5,50 @@ import ProductDescription from './Components/ProductDescription';
 import Card from './Components/Card';
 import Footer from './Components/Footer';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
-class DetailProduct extends Component {
-    constructor(props) {
-        super(props);
-    }
-    state = {  }
-    render() { 
-        return (
+
+function DetailProduct() {
+    const { id } = useParams()
+
+    const [meuble, setMeuble] = useState()
+
+    useEffect(() => {
+        console.log("fetching un meuble") 
+        console.log(id)
+        const url = "http://localhost:4000/meubles/" + id 
+        fetch(url)
+          .then(res => res.json())
+          .then(
+            (res) => {
+              console.log(res)
+              setMeuble(res[0])
+            })
+        }, []
+    )
+        
+    // to-do : adapter le carousel avec les images du meubles 
+     return (
             <div>
                 <Header />
-                <CarouselDetailProduct />
-                <ProductDescription />
+                {meuble ? <>
+                <CarouselDetailProduct 
+                    photos = {[meuble.photo1, meuble.photo2, meuble.photo3]}
+                    name = {meuble.nom}
+                    description = {meuble.description}
+                    />
+                 <ProductDescription
+                    name = {meuble.nom}
+                    description = {meuble.description}
+                    type = {meuble.type}
+                    prix = {meuble.prix}
+                    couleur = {meuble.couleur}
+                    matiere = {meuble.matière}
+                    largeur = {meuble.largeur}
+                    longueur = {meuble.longueur}
+                    hauteur = {meuble.hauteur}
+                /> </> : <p>Chargement...</p>}
                 <Row>
                     <Card />
                     <Card />
@@ -26,6 +58,5 @@ class DetailProduct extends Component {
             </div>
           );
     }
-}
  
 export default DetailProduct ;

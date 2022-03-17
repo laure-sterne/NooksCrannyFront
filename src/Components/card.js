@@ -11,18 +11,19 @@ class Cards extends React.Component {
     }
    
     render() { 
+        const link = "/detailProduct/" + this.props.id
         return ( 
                  <Card className="customCard" style={{  width: '20rem' }}>
                     <Card.Img variant="top" src={this.props.cover} />
                     <Card.Body>
-                        <NavLink to="/detailProduct"><Card.Title>{this.props.name}</Card.Title></NavLink>
+                        <NavLink to={link}> <Card.Title>{this.props.name}</Card.Title> </NavLink>
                         <Card.Text>
                             Type: {this.props.type}
                         </Card.Text>
                         <Card.Text>
-                            Prix: {this.props.price} clochettes
+                            Prix: {this.props.price} < img src="./public/images/bells.jpg"></img>
                         </Card.Text>
-                    <ButtonBuy />
+                    <ButtonBuy id={this.props.id} />
                         
                     </Card.Body>
                 </Card> 

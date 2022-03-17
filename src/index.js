@@ -5,8 +5,8 @@ import './index.css';
 //Import des pages et des composants utiles
 import Main from './Main';
 import Login from './login';
-import Products from './products';
-import DetailProduct from './detailProduct';
+import Products from './Products';
+import DetailProduct from './DetailProduct';
 import Admin from './admin';
 //import du router pour faire le lien entre les pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -20,7 +20,7 @@ ReactDOM.render(
       <Route path="/" element={<Main />} />
       <Route path="/login" element={<Login />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/detailProduct" element={<DetailProduct />} />
+      <Route path="/detailProduct/:id" element={<DetailProduct />} />
       <Route path="/admin" element={<Admin />} />
     </Routes>
   </Router>
