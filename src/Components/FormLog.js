@@ -59,16 +59,10 @@ class FormLog extends Component {
   }
 
   render() {
-<<<<<<< HEAD
-    const connected = this.state.connected
-    const user = this.state.pseudo
-    if(connected !== "yes") {
-=======
     const connected = this.props.connected
     const user = this.state.email
     // const scale = this.props.scale
     if(connected !== "ok") {
->>>>>>> 123f63a79ff05854d62743b706eee710e84f2b14
     return (
       <div>
         <h3> Connectez-vous </h3>
