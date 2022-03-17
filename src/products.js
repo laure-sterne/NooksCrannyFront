@@ -44,8 +44,8 @@ class Products extends Component {
                 <Header />
                 <Container>
                     <Row>
-                        <Col md="auto"><MenuVertical /></Col>
-                        <Col className="customCard" >
+                        <Col md="auto center"><MenuVertical /></Col>
+                        <Col >
                         <ul className = "listeMeubles">
                             {meubles.map(({id, Nom, photo1, type, prix, statut}) => (
                                 statut === "disponible" ?

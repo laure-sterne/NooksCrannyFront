@@ -38,6 +38,7 @@ function DetailProduct() {
                     name = {meuble.nom}
                     description = {meuble.description}
                     />
+                    <h1> </h1>
                  <ProductDescription
                     name = {meuble.nom}
                     description = {meuble.description}
@@ -49,7 +50,8 @@ function DetailProduct() {
                     longueur = {meuble.longueur}
                     hauteur = {meuble.hauteur}
                 /> </> : <p>Chargement...</p>}
-                <Row>
+                <Row className="mx-auto">
+                    <Card />
                     <Card />
                     <Card />
                     <Card />
