@@ -13,8 +13,17 @@ import { Container, Row, Col } from "react-bootstrap";
 class Login extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      connected : "no"
+    };
+    this.handleConnectedState = this.handleConnectedState.bind(this);
   }
-  state = {};
+  
+
+  handleConnectedState(connected){
+    this.setState({connected});
+    // this.state.connected = connected
+  }
   render() {
     return (
       <div>
@@ -24,7 +33,8 @@ class Login extends Component {
             <Col><img src="../images/tomNookCTA.png" /></Col>
             <Col><CallToAction /></Col>  
             <Col>
-              <FormLog />
+              <FormLog connected={this.state.connected}
+              handleConnectedState={this.handleConnectedState}/>
               <Dropdown.Divider />
               <SubscribeForm />
             </Col>

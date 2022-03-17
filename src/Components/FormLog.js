@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Button, Row, InputGroup, Col } from "react-bootstrap";
 
+
 //Formulaire pour se connecter à un compte
 class FormLog extends Component {
   constructor(props) {
@@ -8,8 +9,9 @@ class FormLog extends Component {
     this.state = {
       email: "",
       password: "",
-      connected: "no"
+      // connected: "no",
     };
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -29,8 +31,12 @@ class FormLog extends Component {
       .then(response => {
         // console.log("success: " + response.body)
         console.log(response.ok)
-        if(response.ok == "ok"){this.setState({connected: "yes"})}
-        else {this.setState({connected: "tried"})}
+        if(response.ok == "ok"){
+          this.props.handleConnectedState("ok")
+        }
+        else {
+          this.props.handleConnectedState("tried")
+      }
       }
       )  // si la response est ok, set state connected to true et adapter le render en fonction
      
@@ -48,9 +54,10 @@ class FormLog extends Component {
   }
 
   render() {
-    const connected = this.state.connected
+    const connected = this.props.connected
     const user = this.state.email
-    if(connected !== "yes") {
+    // const scale = this.props.scale
+    if(connected !== "ok") {
     return (
       <div>
         <h3> Connectez-vous </h3>
