@@ -8,7 +8,7 @@ class ProductDescription extends Component {
     state = {  }
     render() { 
         return (
-            <div>
+            <div className="d-block w-50 mx-auto">
                 <ul>
                     <li><h3>{this.props.name}</h3></li>
                     <li> Description : {this.props.description}</li>

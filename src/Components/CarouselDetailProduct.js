@@ -18,7 +18,7 @@ class CarouselDetailProduct extends Component {
          {this.props.photos.map(
           photo => photo ? <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-50 mx-auto"
             src={photo}
             alt={this.props.name}
           />
