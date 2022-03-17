@@ -7,6 +7,7 @@ class FormLog extends Component {
     super(props);
     this.state = {
       email: "",
+      pseudo: "",
       password: "",
       connected: "no"
     };
@@ -19,7 +20,7 @@ class FormLog extends Component {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: this.state.email, password: this.state.password })
+      body: JSON.stringify({mail: this.state.email, mdp: this.state.password })
     }
 
     // voir avec le back pour demander mail ou pseudo 
@@ -29,7 +30,9 @@ class FormLog extends Component {
       .then(response => {
         // console.log("success: " + response.body)
         console.log(response.ok)
-        if(response.ok == "ok"){this.setState({connected: "yes"})}
+        console.log(response.result)
+        if(response.ok == "ok"){this.setState({connected: "yes",
+      pseudo: response.result.pseudo})}
         else {this.setState({connected: "tried"})}
       }
       )  // si la response est ok, set state connected to true et adapter le render en fonction
@@ -49,7 +52,7 @@ class FormLog extends Component {
 
   render() {
     const connected = this.state.connected
-    const user = this.state.email
+    const user = this.state.pseudo
     if(connected !== "yes") {
     return (
       <div>
