@@ -12,7 +12,7 @@ const Footer = () => (
                                 <h3>About</h3>
                                 <ul>
                                     <li><a href="#">En savoir plus sur nous</a></li>
-                                    <li><a href="#">L'équipe</a></li>
+                                    <li><a href="http://localhost:3000/equipe">L'équipe</a></li>
                                     <li><a href="#">Nous recrutons</a></li>
                                 </ul>
                             </div>
