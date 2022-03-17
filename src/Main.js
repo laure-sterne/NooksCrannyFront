@@ -50,7 +50,8 @@ class Main extends Component {
             <CarouselMain />
                 <h2 className="affaires">Nos bonnes affaires du moment :</h2>
                 <ul className = "listeMeubles">
-             {meubles.map(({id, nom, photo1, type, prix}) => (
+             {meubles.map(({id, nom, photo1, type, prix, statut}) => 
+             ( statut === "disponible" ? 
                  <Cards 
                   key = {id}
                   id = {id}
@@ -58,7 +59,7 @@ class Main extends Component {
                   name = {nom}
                   type = {type}
                   price = {prix}
-                 />
+                 /> : null
              ))}
  {/*                <Container>
                         <Row className="customRow">

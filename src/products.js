@@ -47,7 +47,8 @@ class Products extends Component {
                         <Col md="auto"><MenuVertical /></Col>
                         <Col className="customCard" >
                         <ul className = "listeMeubles">
-                            {meubles.map(({id, Nom, photo1, type, prix}) => (
+                            {meubles.map(({id, Nom, photo1, type, prix, statut}) => (
+                                statut === "disponible" ?
                                 <Cards 
                                 key = {id}
                                 id = {id}
@@ -55,7 +56,7 @@ class Products extends Component {
                                 name = {Nom}
                                 type = {type}
                                 price = {prix}
-                                />
+                                /> : null
                             ))}
                         </ul>
                         </Col>
