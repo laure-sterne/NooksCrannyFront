@@ -28,11 +28,11 @@ class SubscribeForm extends Component {
           response.json()
       )
         .catch(error => "error" + error)
-        .then(response => this.setState({created: response.okk}))
+        .then(response => this.setState({created: response.ok}))
       ;
  
     event.preventDefault();
-    event.stopPropagation();
+    // event.stopPropagation();
 }
 
 handleChange = (event) => {
@@ -42,64 +42,64 @@ handleChange = (event) => {
 
 render(){
   return (
-  <form onSubmit={this.handleSubmit}>
-      <label>
-        Mail:
-        <input name="mail" placeholder="Mail" value={this.state.mail}  onChange={this.handleChange} />
-        Mot de passe
-        <input name="mdp" placeholder="Mdp" value={this.state.mdp}  onChange={this.handleChange} />
-        Pseudo
-        <input name="pseudo" placeholder="Pseudo" value={this.state.pseudo}  onChange={this.handleChange} />
-      </label>
-      <input type="submit" value="Submit"/>
-      <p>{this.state.created}</p> 
-    </form>
+    <>
+  {/* // <form onSubmit={this.handleSubmit}>
+  //     <label>
+  //       Mail:
+  //       <input name="mail" placeholder="Mail" value={this.state.mail}  onChange={this.handleChange} />
+  //       Mot de passe
+  //       <input name="mdp" placeholder="Mdp" value={this.state.mdp}  onChange={this.handleChange} />
+  //       Pseudo
+  //       <input name="pseudo" placeholder="Pseudo" value={this.state.pseudo}  onChange={this.handleChange} />
+  //     </label>
+  //     <input type="submit" value="Submit"/>
+  //     <p>{this.state.created}</p> 
+  //   </form> */}
+  <h3> Créer un compte </h3>
+  <Form onSubmit={this.handleSubmit}>
+    <Row>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Adresse e-mail</Form.Label>
+        <Form.Control 
+          name="mail" 
+          value={this.state.mail} 
+          placeholder="tomnook@tominc.ac" 
+          onChange={this.handleChange}
+          />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Mot de passe</Form.Label>
+        <Form.Control 
+        name="mdp" 
+        type="password"
+        value={this.state.mdp} 
+        placeholder="Mot de passe" 
+        onChange={this.handleChange}/>
+      </Form.Group>
+
+      <Form.Group className="mb-3">
+        <Form.Label>Pseudo</Form.Label>
+        <Form.Control 
+        name="pseudo" 
+        value={this.state.pseudo} 
+        placeholder="Pseudo" 
+        onChange={this.handleChange}/>
+      </Form.Group>
+
+    </Row>
+    <Button variant="primary" type="submit">
+      M'enregistrer
+    </Button> 
+    <p>{this.state.created}</p> 
+    
+
+  </Form> 
+
+  </>
   );
 }
 }
-
-  // render() {
-  //   return (
-  //     <div>
-  //       <h3>Vous n'avez pas de compte ? Inscrivez-vous !</h3>
-  //       <Form /*noValidate validated={validated} onSubmit={handleSubmit}*/>
-  //         <Row className="mb-3">
-  //           <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-  //             <Form.Label>Pseudo</Form.Label>
-  //             <InputGroup hasValidation>
-  //               <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-  //               <Form.Control
-  //                 type="text"
-  //                 placeholder="Méli"
-  //                 aria-describedby="inputGroupPrepend"
-  //                 required
-  //               />
-  //               <Form.Control.Feedback type="invalid">
-  //                 Entrez un pseudo
-  //               </Form.Control.Feedback>
-  //             </InputGroup>
-  //           </Form.Group>
-
-  //           <Form.Group className="mb-3" controlId="formBasicEmail">
-  //             <Form.Label>Adresse e-mail</Form.Label>
-  //             <Form.Control type="email" placeholder="melinook@tominc.ac" />
-  //             <Form.Text className="text-muted">
-  //             Tom Nook garde les informations comme ces clochettes. En sécurité
-  //             </Form.Text>
-  //           </Form.Group>
-
-  //           <Form.Group className="mb-3" controlId="formBasicPassword">
-  //             <Form.Label>Mot de passe</Form.Label>
-  //             <Form.Control type="password" placeholder="Mot de passe" />
-  //           </Form.Group>
-  //         </Row>
-  //         <Button variant="primary" type="submit">
-  //           Créer mon compte
-  //         </Button>
-  //       </Form>
-  //     </div>
-  //   );
-  // }
 
 export default SubscribeForm;
 
