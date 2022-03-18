@@ -28,7 +28,7 @@ class SubscribeForm extends Component {
           response.json()
       )
         .catch(error => "error" + error)
-        .then(response => this.setState({created: response.ok}))
+        .then(response => this.setState({created: response.okk}))
       ;
  
     event.preventDefault();
